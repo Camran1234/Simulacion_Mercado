@@ -1,0 +1,59 @@
+digraph g { 
+ subgraph cluster_0 {
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+label="Cola Espera"
+
+}subgraph cluster_4  {
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+label="Lista Carretas: 1"
+r0 [label="Carreta: 15" ];
+r1 [label="Carreta: 14" ];
+r2 [label="Carreta: 13" ];
+r3 [label="Carreta: 12" ];
+r4 [label="Carreta: 11" ];
+r5 [label="Carreta: 9" ];
+r6 [label="Carreta: 7" ];
+r7 [label="Carreta: 4" ];
+r8 [label="Carreta: 3" ];
+r0 -> r1 -> r2 -> r3 -> r4 -> r5 -> r6 -> r7 -> r8 ;
+}subgraph cluster_5  {
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+label="Lista Carretas: 2"
+m0 [label="Carreta: 10" ];
+m1 [label="Carreta: 8" ];
+m2 [label="Carreta: 6" ];
+m3 [label="Carreta: 5" ];
+m4 [label="Carreta: 2" ];
+m5 [label="Carreta: 1" ];
+m0 -> m1 -> m2 -> m3 -> m4 -> m5 ;
+}subgraph cluster_1 {
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+label="Lista Circular Compras"
+
+}subgraph cluster_2 {
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+label="Lista Cajas"
+d0 [label="Caja: 5 
+ Turnos:1 Disponible: 1 " ];
+d1 [label="Caja: 4 
+ Turnos:4 Disponible: 1 " ];
+d2 [label="Caja: 3 
+ Turnos:3 Disponible: 1 " ];
+d3 [label="Caja: 2 
+ Turnos:2 Disponible: 1 " ];
+d4 [label="Caja: 1 
+ Turnos:1 Disponible: 1 " ];
+d0 -> d1 -> d2 -> d3 -> d4;
+d4 -> d3 -> d2 -> d1 -> d0;
+
+}}

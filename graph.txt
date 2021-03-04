@@ -1,0 +1,95 @@
+digraph g { 
+ subgraph cluster_0 {
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+label="Cola Espera"
+
+}subgraph cluster_4  {
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+label="Lista Carretas: 1"
+
+}subgraph cluster_5  {
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+label="Lista Carretas: 2"
+
+}subgraph cluster_1 {
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+label="Lista Circular Compras"
+l0 [label="Cliente: 30 
+ Carreta:7" ];
+l1 [label="Cliente: 29 
+ Carreta:6" ];
+l2 [label="Cliente: 28 
+ Carreta:13" ];
+l3 [label="Cliente: 26 
+ Carreta:1" ];
+l4 [label="Cliente: 25 
+ Carreta:2" ];
+l5 [label="Cliente: 24 
+ Carreta:3" ];
+l6 [label="Cliente: 23 
+ Carreta:5" ];
+l7 [label="Cliente: 21 
+ Carreta:8" ];
+l8 [label="Cliente: 20 
+ Carreta:9" ];
+l9 [label="Cliente: 19 
+ Carreta:4" ];
+l10 [label="Cliente: 18 
+ Carreta:12" ];
+l11 [label="Cliente: 17 
+ Carreta:15" ];
+l12 [label="Cliente: 16 
+ Carreta:17" ];
+l13 [label="Cliente: 15 
+ Carreta:19" ];
+l14 [label="Cliente: 14 
+ Carreta:20" ];
+l15 [label="Cliente: 13 
+ Carreta:21" ];
+l16 [label="Cliente: 11 
+ Carreta:10" ];
+l17 [label="Cliente: 10 
+ Carreta:11" ];
+l18 [label="Cliente: 9 
+ Carreta:18" ];
+l19 [label="Cliente: 7 
+ Carreta:14" ];
+l20 [label="Cliente: 6 
+ Carreta:16" ];
+l21 [label="Cliente: 5 
+ Carreta:22" ];
+l22 [label="Cliente: 4 
+ Carreta:24" ];
+l23 [label="Cliente: 2 
+ Carreta:23" ];
+l24 [label="Cliente: 1 
+ Carreta:25" ];
+l0 -> l1 -> l2 -> l3 -> l4 -> l5 -> l6 -> l7 -> l8 -> l9 -> l10 -> l11 -> l12 -> l13 -> l14 -> l15 -> l16 -> l17 -> l18 -> l19 -> l20 -> l21 -> l22 -> l23 -> l24 ->  l0;
+
+}subgraph cluster_2 {
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+label="Lista Cajas"
+d0 [label="Caja: 5 
+ Turnos:1 Disponible: 1 " ];
+d1 [label="Caja: 4 
+ Turnos:1 Disponible: 1 " ];
+d2 [label="Caja: 3 
+ Turnos:1 Disponible: 1 " ];
+d3 [label="Caja: 2 
+ Turnos:2 Disponible: 1 " ];
+d4 [label="Caja: 1 
+ Turnos:3 Disponible: 1 " ];
+d0 -> d1 -> d2 -> d3 -> d4;
+d4 -> d3 -> d2 -> d1 -> d0;
+
+}}
